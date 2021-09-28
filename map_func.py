@@ -10,3 +10,5 @@ seq2 = (6, 7, 8, 9, 10)
 seq3 = (11, 12, 13, 14, 15)
 print(map(lambda_function, seq1, seq2, seq3))
 print(list(map(lambda_function, seq1, seq2, seq3)))
+# <map object at 0x00000000025AB040>
+# [18, 21, 24, 27, 30]

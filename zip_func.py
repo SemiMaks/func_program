@@ -7,13 +7,17 @@ y = 'asd'
 zipped = zip(x, y)
 print(zipped)
 print(list(zipped))
+# [('q', 'a'), ('w', 's'), ('e', 'd')]
 
 # оператор * распаковывает объединенную последовательность в отдельные кортежи
 x2, y2 = zip(*zip(x, y))
 print(x2)
+# ('q', 'w', 'e')
 print(y2)
+# ('a', 's', 'd')
 
 if x == ''.join(x2) and ''.join(y2):
     print(True)
 else:
     print(False)
+# True

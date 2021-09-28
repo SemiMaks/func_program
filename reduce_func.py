@@ -18,6 +18,7 @@ def reduce(fn, seq, initializer=None):
 
 summed_numbers = reduce(get_sum, seq)
 print('Сумма всех чисел: ', summed_numbers)
+# Сумма всех чисел:  15
 
 sentences = [
     "Вечер.", "Стало темнеть.",
@@ -26,3 +27,4 @@ sentences = [
 wsum = lambda acc, sentence: acc + len(sentence.split())
 number_of_words = reduce(wsum, sentences, 0)
 print('Количество слов: ', number_of_words)
+# Количество слов:  6
